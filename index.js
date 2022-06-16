@@ -14,10 +14,6 @@ app.use(express.urlencoded({extended: false}));
 app.use('/car', carRoutes);
 app.use('/', appRoutes);
 
-// app.get('/', (req, res) => {
-//     res.sendFile(path.resolve(__dirname, 'static', 'index.html'));
-// });
-
 app.listen(PORT, () => {
     console.log(`Server has been started on port ${PORT}...`);
 });
